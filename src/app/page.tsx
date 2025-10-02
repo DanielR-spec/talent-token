@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { Home, User, Briefcase } from "lucide-react";
+import { Header } from "@/components/ui/header"
 
 export default function TalentTokenDemo() {
   const [portfolio, setPortfolio] = useState([
@@ -23,8 +24,8 @@ export default function TalentTokenDemo() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Main content */}
+      <Header></Header>
       <div className="flex-1 p-4 md:p-6 grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto pb-20">
-        
         {/* Dashboard */}
         <Card className="lg:col-span-2 shadow-xl rounded-2xl">
           <CardContent className="p-4 md:p-6">
